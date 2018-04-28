@@ -7,6 +7,10 @@ contract HelloWorld {
         m_name = name;
     }
 
+    function modify_name(string new_name) public payable {
+        m_name = new_name;
+    }
+
     function hello() public view returns (string) {
         return m_name;
     }
